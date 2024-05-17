@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog de Fotografia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6a0dad;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4b0082;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #6a0dad;
+        }
+        .container {
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .portfolio, .blog-posts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .portfolio img, .blog-post {
+            max-width: 45%;
+            margin: 10px;
+            border: 2px solid #ddd;
+        }
+        .blog-post {
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+        }
+        footer {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog de Fotografia</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre-mim">Sobre Mim</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="home">
+            <div class="intro">
+                <h2>Bem-vindo ao meu blog de fotografia</h2>
+                <p>Aqui você encontrará minhas últimas fotos e posts sobre fotografia.</p>
+            </div>
+        </section>
+        <section id="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou um fotógrafo apaixonado por capturar momentos especiais e transformar em arte. Com anos de experiência, meu objetivo é compartilhar meu trabalho e conhecimento através deste blog.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="portfolio">
+                <img src="https://via.placeholder.com/600x400" alt="Foto 1">
+                <img src="https://via.placeholder.com/600x400" alt="Foto 2">
+                <img src="https://via.placeholder.com/600x400" alt="Foto 3">
+                <img src="https://via.placeholder.com/600x400" alt="Foto 4">
+            </div>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h3>Título do Post 1</h3>
+                    <p>Este é um exemplo de postagem de blog. Aqui você pode escrever sobre técnicas de fotografia, histórias interessantes, dicas para capturar melhores fotos, e muito mais.</p>
+                </div>
+                <div class="blog-post">
+                    <h3>Título do Post 2</h3>
+                    <p>Outro exemplo de postagem de blog. Continue compartilhando seu conhecimento e paixão pela fotografia com seus leitores.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form class="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Meu Blog de Fotografia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
